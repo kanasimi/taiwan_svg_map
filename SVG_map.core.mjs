@@ -138,7 +138,7 @@ export function adapt_map_options(SVG_data, map_options) {
         if (!(county in groups.county_label.index_of)
             && !Object.keys(groups.county_label.index_of).some(_county => {
                 if (_county.includes(county)
-                || _county.includes(county.replace(/台/g, '臺')) {
+                || _county.includes(county.replace(/台/g, '臺'))) {
                     county = _county;
                     return true;
                 }
