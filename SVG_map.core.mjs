@@ -62,7 +62,7 @@ export function convert_to_SVG_data(SVG_content, options) {
 // ----------------------------------------------------------------------------
 
 // @see [[臺灣行政區劃]], original from [[File:Blank Taiwan map.svg]]
-export const default_SVG_file_name = 'Taiwan map labeled - no town.svg';
+export const default_SVG_file_name = 'resources/Taiwan map labeled - no town.svg';
 // default value
 export const KEY_default = '*';
 const key_groups = ['county', 'county_label', 'information_label'];
