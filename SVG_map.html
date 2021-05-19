@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>簡易型臺灣地圖圖表製作工具: 可程式化的工具，設定好各縣市的數量顏色資訊後，直接輸出臺灣地圖 SVG</title>
+	<script type="module" src="SVG_map.web.mjs"></script>
+	<script src="https://kanasimi.github.io/CeJS/ce.js"></script>
+
+	<style>
+		#map_options_panel {
+			width: 90%;
+			height: 20em;
+		}
+	</style>
+</head>
+
+<body>
+	<object id="original_SVG_file" data="Taiwan map labeled - no town.svg" width="0" height="0" type="image/svg+xml"
+		style="visibility:hidden ;"></object>
+
+
+	<div id="loading_panel">Loading...</div>
+	<div id="main_panel" style="display:none;">
+		請按順序輸入 county, label, fill, color，中間以 tab 分隔。每個縣市一行：
+		<!-- @see convert_map_options() --><br />
+		<textarea id="map_options_panel">
+馬祖	馬祖label	red	orange
+臺東	臺東label	#eff
+</textarea><br />
+	</div>
+
+	<img id="preview_image" />
+
+</body>
+
+</html>

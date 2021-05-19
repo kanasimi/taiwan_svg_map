@@ -1,0 +1,32 @@
+{
+	"name": "taiwan_svg_map",
+	"title": "簡易型臺灣地圖圖表製作工具",
+	"version": "v1.0.0",
+	"description": "可程式化的工具，設定好各縣市的數量顏色資訊後，直接輸出臺灣地圖 SVG。",
+	"keywords": [
+		"SVG",
+		"map",
+		"cejs"
+	],
+	"author": {
+		"name": "Colorless echo",
+		"email": "vimunci@gmail.com",
+		"url": "https://github.com/kanasimi/taiwan_svg_map"
+	},
+	"contributors": [
+		"vimunci"
+	],
+	"license": "BSD-3-Clause",
+	"homepage": "https://github.com/kanasimi/taiwan_svg_map",
+	"bugs": {
+		"url": "https://github.com/kanasimi/taiwan_svg_map/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kanasimi/taiwan_svg_map.git"
+	},
+	"devDependencies": {},
+	"dependencies": {
+		"cejs": "latest"
+	}
+}
