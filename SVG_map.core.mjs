@@ -48,7 +48,7 @@ export function convert_to_SVG_data(SVG_content, options) {
 				set_index_of(node.text.tspan, index);
 				set_index_of(node.text.title, index);
 			} else if (node.path) {
-				node.path.forEach(n => {
+				(Array.isArray(node.path) ? node.path : [node.path]).forEach(n => {
 					set_index_of(n.title, index);
 				});
 			}
